@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{5076BB
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HelloWorldModule", "HelloWorldModule\HelloWorldModule\HelloWorldModule.fsproj", "{9F01F548-1D23-4BE2-A5A0-1290FD68582B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -22,6 +24,10 @@ Global
 		{A7C441BA-B47B-44B7-9878-8A9269108B09}.Debug|x86.Build.0 = Debug|x86
 		{A7C441BA-B47B-44B7-9878-8A9269108B09}.Release|x86.ActiveCfg = Release|x86
 		{A7C441BA-B47B-44B7-9878-8A9269108B09}.Release|x86.Build.0 = Release|x86
+		{9F01F548-1D23-4BE2-A5A0-1290FD68582B}.Debug|x86.ActiveCfg = Debug|x86
+		{9F01F548-1D23-4BE2-A5A0-1290FD68582B}.Debug|x86.Build.0 = Debug|x86
+		{9F01F548-1D23-4BE2-A5A0-1290FD68582B}.Release|x86.ActiveCfg = Release|x86
+		{9F01F548-1D23-4BE2-A5A0-1290FD68582B}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

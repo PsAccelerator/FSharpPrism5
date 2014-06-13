@@ -29,6 +29,8 @@ and DemoBootstrapper() =
         App.Current.MainWindow.Show()
     override x.ConfigureModuleCatalog() = 
         base.ConfigureModuleCatalog()
+        let moduleCatalog = x.ModuleCatalog :?> ModuleCatalog
+        moduleCatalog.AddModule(typeof<HelloWorldModule.HelloWorldModule>) |> ignore
 
 [<STAThread>]
 (new App()).Run()|> ignore
