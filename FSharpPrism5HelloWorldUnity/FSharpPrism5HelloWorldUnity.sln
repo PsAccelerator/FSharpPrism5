@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpPrism5HelloWorldUnity", "FSharpPrism5HelloWorldUnity\FSharpPrism5HelloWorldUnity.fsproj", "{A7C441BA-B47B-44B7-9878-8A9269108B09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7C441BA-B47B-44B7-9878-8A9269108B09}.Debug|x86.ActiveCfg = Debug|x86
+		{A7C441BA-B47B-44B7-9878-8A9269108B09}.Debug|x86.Build.0 = Debug|x86
+		{A7C441BA-B47B-44B7-9878-8A9269108B09}.Release|x86.ActiveCfg = Release|x86
+		{A7C441BA-B47B-44B7-9878-8A9269108B09}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
