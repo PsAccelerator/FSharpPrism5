@@ -3,8 +3,8 @@
 open System
 open System.Windows
 open System.Windows.Controls
+
 open Microsoft.Practices.Prism.Modularity
-open Microsoft.Practices.Unity
 open Microsoft.Practices.Prism.UnityExtensions
 
 open FSharpx
