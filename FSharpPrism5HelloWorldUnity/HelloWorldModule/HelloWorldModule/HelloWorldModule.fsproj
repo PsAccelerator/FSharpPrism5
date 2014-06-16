@@ -6,7 +6,7 @@
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>9f01f548-1d23-4be2-a5a0-1290fd68582b</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Library</OutputType>
     <RootNamespace>HelloWorldModule</RootNamespace>
     <AssemblyName>HelloWorldModule</AssemblyName>
     <targetframeworkversion>v4.5</targetframeworkversion>
