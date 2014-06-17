@@ -5,7 +5,7 @@ open System.Windows
 open System.Windows.Controls
 open Microsoft.Practices.Prism.Modularity
 open Microsoft.Practices.Prism.UnityExtensions
-open FSharpx
+open FsXaml
 
 type Shell = XAML<"Shell.xaml">
 
@@ -19,8 +19,7 @@ type App() =
 and DemoBootstrapper() =
     inherit UnityBootstrapper()
     override x.CreateShell() = 
-        let window = Shell()
-        window.Root :> DependencyObject
+        Shell().CreateRoot() :> DependencyObject
     override x.InitializeShell() =
         base.InitializeShell()
         App.Current.MainWindow <- x.Shell :?> Window
