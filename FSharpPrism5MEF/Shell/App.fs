@@ -28,14 +28,7 @@ and Bootstrapper() =
             base.InitializeShell()
             App.Current.MainWindow <- x.Shell :?> Window
             App.Current.MainWindow.Show()
-        override x.ConfigureContainer() =
-             base.ConfigureContainer()
-        override x.CreateModuleCatalog() =
-             new ConfigurationModuleCatalog() :> IModuleCatalog
-        override x.ConfigureModuleCatalog() =
-            base.ConfigureModuleCatalog()
         override x.ConfigureAggregateCatalog() =
-            x.AggregateCatalog.Catalogs.Add(new AssemblyCatalog(typeof<Bootstrapper>.Assembly))
             let path = @"..\..\..\DirectoryModules"
             let dir = new DirectoryInfo(path);
             if not dir.Exists then dir.Create()

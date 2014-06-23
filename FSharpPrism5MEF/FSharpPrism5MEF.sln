@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Shell", "Shell\Shell.fsproj", "{D7A5DDEA-C4D7-45E1-BFDF-193921F8A500}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7BCDF298-325E-4C06-AD57-86BF10B7B0A1} = {7BCDF298-325E-4C06-AD57-86BF10B7B0A1}
+	EndProjectSection
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HelloWorldModule", "HelloWorldModule\HelloWorldModule.fsproj", "{7BCDF298-325E-4C06-AD57-86BF10B7B0A1}"
 EndProject
