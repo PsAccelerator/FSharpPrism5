@@ -29,7 +29,7 @@ and Bootstrapper() =
             App.Current.MainWindow <- x.Shell :?> Window
             App.Current.MainWindow.Show()
         override x.ConfigureAggregateCatalog() =
-            let path = @"..\..\..\..\..\..\DirectoryModules"
+            let path = @"..\..\..\DirectoryModules"
             let dir = new DirectoryInfo(path);
             if not dir.Exists then dir.Create()
             let catalog = new DirectoryCatalog(path)
