@@ -31,6 +31,7 @@ and Bootstrapper() =
         override x.ConfigureAggregateCatalog() =
             let path = @"..\..\..\DirectoryModules"
             let dir = new DirectoryInfo(path);
+            //remove the post build event of the module in cases in case of exceptions
             if not dir.Exists then dir.Create()
             let catalog = new DirectoryCatalog(path)
             x.AggregateCatalog.Catalogs.Add(catalog)
