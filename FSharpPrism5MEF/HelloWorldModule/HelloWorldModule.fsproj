@@ -9,9 +9,10 @@
     <OutputType>Library</OutputType>
     <RootNamespace>HelloWorldModule</RootNamespace>
     <AssemblyName>HelloWorldModule</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFSharpCoreVersion>4.4.0.0</TargetFSharpCoreVersion>
     <Name>HelloWorldModule</Name>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -49,7 +50,8 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
   <PropertyGroup>
-    <PostBuildEvent>copy /y "$(TargetPath)" "..\..\..\DirectoryModules"</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -59,11 +61,11 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FsXaml.Wpf">
-      <HintPath>..\packages\FsXaml.Wpf.0.9.8\lib\net45\FsXaml.Wpf.dll</HintPath>
+      <HintPath>..\packages\FsXaml.Wpf.0.9.9\lib\net45\FsXaml.Wpf.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="FsXaml.Wpf.TypeProvider">
-      <HintPath>..\packages\FsXaml.Wpf.0.9.8\lib\net45\FsXaml.Wpf.TypeProvider.dll</HintPath>
+      <HintPath>..\packages\FsXaml.Wpf.0.9.9\lib\net45\FsXaml.Wpf.TypeProvider.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Practices.Prism.Composition">
@@ -87,7 +89,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Practices.Prism.PubSubEvents">
-      <HintPath>..\packages\Prism.PubSubEvents.1.1.0\lib\portable-sl5+windowsphone8+windows8+net40+wpa81\Microsoft.Practices.Prism.PubSubEvents.dll</HintPath>
+      <HintPath>..\packages\Prism.PubSubEvents.1.1.2\lib\portable-sl5+windowsphone8+windows8+net40+wpa81\Microsoft.Practices.Prism.PubSubEvents.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Practices.Prism.SharedInterfaces">
@@ -116,6 +118,9 @@
     <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
   </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>copy /y "$(TargetPath)" "..\..\..\DirectoryModules"</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

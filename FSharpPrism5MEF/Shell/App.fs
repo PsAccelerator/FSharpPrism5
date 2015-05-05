@@ -23,7 +23,7 @@ and Bootstrapper() =
     inherit MefBootstrapper()
         override x.CreateShell() = 
             let window = Shell()
-            window.CreateRoot() :> DependencyObject
+            window.Root :> DependencyObject
         override x.InitializeShell() =
             base.InitializeShell()
             App.Current.MainWindow <- x.Shell :?> Window
@@ -32,6 +32,7 @@ and Bootstrapper() =
             let path = @"..\..\..\DirectoryModules"
             let dir = new DirectoryInfo(path);
             //remove the post build event of the module in cases in case of exceptions
+            //or create the directory yourself
             if not dir.Exists then dir.Create()
             let catalog = new DirectoryCatalog(path)
             x.AggregateCatalog.Catalogs.Add(catalog)
